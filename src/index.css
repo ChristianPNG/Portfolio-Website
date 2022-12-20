@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	width: 100vw;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
 		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
 		"Helvetica Neue", sans-serif;
@@ -12,7 +13,28 @@ code {
 		monospace;
 }
 
-.title {
-	position: absolute;
-	top: 200px;
+/* custom scrollbar */
+::-webkit-scrollbar {
+	width: 20px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgb(240, 240, 240);
+	border-radius: 20px;
+	border: 6px solid transparent;
+	background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #2a2a2a;
+}
+
+.main-background {
+	position: relative;
+	width: inherit;
+	background-color: transparent;
 }

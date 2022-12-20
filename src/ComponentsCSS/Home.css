@@ -1,18 +1,19 @@
 .title-background {
+	position: relative;
+	width: inherit;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: white;
 	background: linear-gradient(
-		rgb(58, 51, 47),
+		rgb(77, 71, 69),
+		rgb(66, 60, 56),
 		rgb(43, 38, 35),
+		rgb(31, 27, 25),
+		rgb(28, 25, 23),
 		rgb(28, 25, 23)
 	);
-
-	/* circle 490px,
-		rgb(90,59,179) purple
-	   rgb(54, 69, 226) blue */
 }
 
 .projects-screen {
@@ -26,10 +27,11 @@
 }
 
 .container {
+	position: relative;
+	width: inherit;
 	height: 100vh;
-	overflow-y: auto; /* height + overflow allows to scroll in the container and not the body*/
+	overflow-y: overlay;
 	overflow-x: hidden;
-	perspective: 10px; /* specifies how far the z axis of the screen is*/
 }
 
 .title-content {
@@ -47,7 +49,7 @@
 	height: 300px;
 	width: 300px;
 	margin: 0;
-	background: radial-gradient(circle at 70px 70px, rgb(255, 255, 255), #000);
+	background: radial-gradient(circle at 70px 70px, rgb(255, 253, 252), #000);
 }
 
 .sphere2 {
@@ -61,28 +63,29 @@
 	width: 500px;
 	margin: 0;
 	z-index: 1;
-	background: radial-gradient(
-		circle at 300px 300px,
-		rgb(255, 255, 255),
-		#000
-	);
+	background: radial-gradient(circle, rgb(179, 171, 163), #000);
 }
 
 .header {
 	position: absolute;
 	display: flex;
 	flex-direction: row;
+	gap: 30px;
 	top: 5%;
 	right: 10%;
 }
 
 button {
-	background: none;
+	background: transparent;
 	color: white;
-	border: none;
+	border-radius: 3ch;
+	border-color: transparent;
 	font-size: large;
+	transition: all 0.05s;
 }
 
 button:hover {
 	cursor: pointer;
+	text-shadow: 0 0 15px white;
+	transform: scale(1.1);
 }

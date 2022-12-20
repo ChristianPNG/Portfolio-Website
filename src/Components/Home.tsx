@@ -1,7 +1,9 @@
 import React from "react";
 import "../ComponentsCSS/Home.css";
+import "../App.css";
+import { Project } from "./Projects";
 
-export function Home() {
+export function Home(): JSX.Element {
 	return (
 		<div className="container">
 			<section className="title-background">
@@ -17,7 +19,7 @@ export function Home() {
 				</div>
 			</section>
 			<section className="projects-screen">
-				<h1>Christian Rullan</h1>
+				<Project></Project>
 			</section>
 		</div>
 	);
