@@ -1,0 +1,16 @@
+.projects-container {
+	position: relative;
+	color: white;
+	top: 20%;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1ch;
+	grid-auto-rows: 200px;
+}
+.grid-item {
+	background-color: maroon;
+	padding: 1em;
+}
