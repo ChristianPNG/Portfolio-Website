@@ -74,7 +74,7 @@ button {
 	border-radius: 3ch;
 	border-color: transparent;
 	font-size: large;
-	transition: all 0.05s;
+	transition: all 0.2s;
 }
 
 button:hover {
