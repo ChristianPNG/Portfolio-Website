@@ -17,7 +17,7 @@
 }
 .grid > div {
 	position: relative;
-	background-color: transparent;
+	background-color: rgb(54, 52, 50);
 	outline: 0.3ch solid rgba(255, 255, 255, 0.6);
 	border-radius: 1ch;
 	display: grid;
@@ -29,7 +29,7 @@
 }
 
 .grid > div > div:nth-child(2n) {
-	background-color: #171a1c;
+	background-color: #1d1f20;
 }
 
 img {
@@ -52,7 +52,7 @@ img {
 .grid > div:hover::before {
 	left: 330px;
 	width: 40%;
-	background: rgba(255, 255, 255, 0.2);
+	background: rgba(255, 255, 255, 0.3);
 }
 
 .grid > div:hover {
