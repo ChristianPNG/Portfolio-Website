@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../ComponentsCSS/Projects.css";
 
 export function Project(): JSX.Element {
@@ -8,10 +9,10 @@ export function Project(): JSX.Element {
 			className="projects-container"
 		>
 			<div className="grid">
-				<div>
+				<Link to={"/shell"}>
 					<div></div>
 					<div></div>
-				</div>
+				</Link>
 				<div>
 					<div></div>
 					<div></div>

@@ -1,0 +1,28 @@
+.background {
+	height: 100vh;
+	min-height: 600px;
+	width: 100vw;
+	color: white;
+	background: linear-gradient(
+		rgb(77, 71, 69),
+		rgb(66, 60, 56),
+		rgb(43, 38, 35),
+		rgb(31, 27, 25),
+		rgb(28, 25, 23),
+		rgb(28, 25, 23)
+	);
+}
+
+.title {
+	text-align: center;
+	margin-top: auto;
+	padding-top: 2%;
+	transform: scale(1.2);
+	text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+p {
+	margin: auto;
+	width: 85%;
+	font-weight: 600;
+}
