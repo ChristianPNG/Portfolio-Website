@@ -19,10 +19,17 @@
 	padding-top: 2%;
 	transform: scale(1.2);
 	text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+	color: #facd3d;
 }
 
 p {
 	margin: auto;
 	width: 85%;
 	font-weight: 600;
+}
+
+.gallary {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

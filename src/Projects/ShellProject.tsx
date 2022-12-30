@@ -1,11 +1,12 @@
 import React from "react";
+import { Gallary } from "../Components/Gallary";
 import "../ComponentsCSS/Project-Description.css";
 
 export function ShellProject(): JSX.Element {
 	return (
 		<div className="background">
 			<h1 className="title">Unix Shell</h1>
-			<hr style={{ width: "87%" }}></hr>
+			<hr style={{ width: "89%" }}></hr>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 				eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -25,21 +26,11 @@ export function ShellProject(): JSX.Element {
 				habitant. Accumsan tortor posuere ac ut consequat semper
 				viverra. Mattis enim ut tellus elementum. Aliquam vestibulum
 				morbi blandit cursus risus at ultrices. Tempus urna et pharetra
-				pharetra massa. <br></br>Magna eget est lorem ipsum dolor. In
-				nibh mauris cursus mattis molestie a iaculis at erat. Congue eu
-				consequat ac felis donec et odio pellentesque diam. Cras semper
-				auctor neque vitae tempus quam pellentesque nec. Lacinia quis
-				vel eros donec ac. Ultrices dui sapien eget mi proin sed. Donec
-				massa sapien faucibus et molestie ac feugiat sed lectus.
-				Ultricies integer quis auctor elit sed vulputate mi sit amet. In
-				iaculis nunc sed augue lacus viverra vitae. Sed felis eget velit
-				aliquet sagittis id consectetur. Quisque sagittis purus sit amet
-				volutpat consequat mauris nunc congue. Ultrices sagittis orci a
-				scelerisque purus semper eget duis at. Aliquet enim tortor at
-				auctor urna nunc id. Libero volutpat sed cras ornare arcu dui.
-				Id aliquet risus feugiat in ante metus. Purus faucibus ornare
-				suspendisse sed nisi lacus sed.{" "}
+				pharetra massa.
 			</p>
+			<div className="gallary">
+				<Gallary></Gallary>
+			</div>
 		</div>
 	);
 }
