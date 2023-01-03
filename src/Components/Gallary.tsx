@@ -1,47 +1,47 @@
 import React, { useState } from "react";
 import "../ComponentsCSS/Gallary.css";
+import pic from "../images/cool_rigby.png";
 
 export function Gallary(): JSX.Element {
-	const [visible, setVisible] = useState(false);
-	let selectedItem: HTMLElement | null = null;
-	function enlarge(id: string) {
-		selectedItem = document.getElementById(id);
-		selectedItem!.classList.add("enlarge");
-		selectedItem!.classList.remove("item");
-		setVisible(true);
+	const [enlargedImageUrl, setEnlargedImageUrl] = useState<string | null>(
+		null
+	);
+	const images = [pic];
+
+	function enlarge(img: string) {
+		setEnlargedImageUrl(img);
 	}
 	function close() {
-		selectedItem!.classList.add("item");
-		selectedItem!.classList.remove("enlarge");
+		setEnlargedImageUrl(null);
 	}
 	return (
-		<div className="viewport">
+		<div
+			className="viewport"
+			id="viewport"
+		>
 			<ul className="list">
-				<li
-					id="1"
-					className="item"
-					onClick={() => enlarge("1")}
-				>
-					1
-				</li>
-				<li className="item">2</li>
-				<li className="item">3</li>
-				<li className="item">4</li>
-				<li className="item">5</li>
-				<li className="item">6</li>
-				<li className="item">7</li>
-				<li className="item">8</li>
-				<li className="item">9</li>
-				<li className="item">10</li>
-				<li className="item">11</li>
-				<li className="item">12</li>
+				{images.map((img) => (
+					<img
+						src={img}
+						alt=""
+						className="item"
+						onClick={() => enlarge(img)}
+					/>
+				))}
 			</ul>
-			{visible && (
-				<div
-					className="close-button"
-					onClick={close}
-				>
-					&#10005;
+			{enlargedImageUrl && (
+				<div className="enlarged-image-container">
+					<img
+						className="enlarge"
+						src={enlargedImageUrl}
+						alt=""
+					/>
+					<button
+						className="close-button"
+						onClick={close}
+					>
+						X
+					</button>
 				</div>
 			)}
 		</div>
