@@ -11,11 +11,18 @@
 .grid {
 	width: 80%;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 4ch;
 	grid-auto-rows: 250px;
 }
-.grid > div,
+
+.box-4 {
+	margin-left: 50%;
+}
+.box-5 {
+	margin-left: 50%;
+}
+
 .grid > a {
 	position: relative;
 	background-color: rgb(54, 52, 50);
@@ -29,7 +36,6 @@
 	transition: 0.6s;
 }
 
-.grid > div > div:nth-child(2n),
 .grid > a > div:nth-child(2n) {
 	background-color: #1d1f20;
 }
@@ -40,7 +46,6 @@ img {
 	border-bottom-right-radius: 0%;
 }
 
-.grid > div:before,
 .grid > a:before {
 	content: "";
 	background: rgba(255, 255, 255, 0.3);
@@ -52,14 +57,12 @@ img {
 	transition: 0.6s;
 }
 
-.grid > div:hover::before,
 .grid > a:hover::before {
 	left: 330px;
 	width: 40%;
 	background: rgba(255, 255, 255, 0.3);
 }
 
-.grid > div:hover,
 .grid > a:hover {
 	transform: scale(1.1);
 	cursor: pointer;
