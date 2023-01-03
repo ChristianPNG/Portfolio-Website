@@ -2,10 +2,10 @@ import React from "react";
 import { Gallary } from "../Components/Gallary";
 import "../ComponentsCSS/Project-Description.css";
 
-export function ShellProject(): JSX.Element {
+export function ClassScheduler(): JSX.Element {
 	return (
 		<div className="background">
-			<h1 className="title">Unix Shell</h1>
+			<h1 className="title">Class Scheduler</h1>
 			<hr style={{ width: "89%" }}></hr>
 			<div className="description-grid-container">
 				<p>
@@ -30,19 +30,7 @@ export function ShellProject(): JSX.Element {
 					blandit cursus risus at ultrices. Tempus urna et pharetra
 					pharetra massa.
 				</p>
-				<div className="tag-list">
-					<div>Linux</div>
-					<div>C</div>
-					<div>Memory Allocation</div>
-					<div>Pointers</div>
-					<div>Linked List</div>
-					<div>Command Prompt</div>
-					<div>Signals</div>
-					<div>Files</div>
-					<div>Wildcards</div>
-					<div>Arguments</div>
-					<div>Environment Variables</div>
-				</div>
+				<div className="tag-list"></div>
 			</div>
 			<div className="gallary">
 				<Gallary></Gallary>

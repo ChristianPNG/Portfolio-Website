@@ -48,7 +48,7 @@ p {
 	align-content: flex-start;
 }
 
-.tag-list-item {
+.tag-list > div {
 	border: 2px solid white;
 	border-radius: 0px;
 	width: fit-content;
