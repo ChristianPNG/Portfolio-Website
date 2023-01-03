@@ -1,0 +1,59 @@
+.background {
+	height: 100vh;
+	min-height: 600px;
+	width: 100vw;
+	color: white;
+	background: linear-gradient(
+		rgb(77, 71, 69),
+		rgb(66, 60, 56),
+		rgb(43, 38, 35),
+		rgb(31, 27, 25),
+		rgb(28, 25, 23),
+		rgb(28, 25, 23)
+	);
+}
+
+.title {
+	text-align: center;
+	margin-top: auto;
+	padding-top: 1%;
+	transform: scale(1.2);
+	text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+	color: #facd3d;
+}
+
+p {
+	font-weight: 600;
+}
+
+.gallary {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.description-grid-container {
+	display: grid;
+	grid-template-columns: 3.3fr 1fr;
+	width: 85%;
+	margin: auto;
+	grid-gap: 10px;
+}
+
+.tag-list {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+.tag-list-item {
+	border: 2px solid white;
+	border-radius: 0px;
+	width: fit-content;
+	height: fit-content;
+	padding: 4px;
+	margin: 5px;
+	border-radius: 4px;
+}

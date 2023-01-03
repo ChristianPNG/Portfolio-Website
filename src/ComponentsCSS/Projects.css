@@ -15,7 +15,8 @@
 	grid-gap: 4ch;
 	grid-auto-rows: 250px;
 }
-.grid > div {
+.grid > div,
+.grid > a {
 	position: relative;
 	background-color: rgb(54, 52, 50);
 	outline: 0.3ch solid rgba(255, 255, 255, 0.6);
@@ -28,7 +29,8 @@
 	transition: 0.6s;
 }
 
-.grid > div > div:nth-child(2n) {
+.grid > div > div:nth-child(2n),
+.grid > a > div:nth-child(2n) {
 	background-color: #1d1f20;
 }
 
@@ -38,7 +40,8 @@ img {
 	border-bottom-right-radius: 0%;
 }
 
-.grid > div:before {
+.grid > div:before,
+.grid > a:before {
 	content: "";
 	background: rgba(255, 255, 255, 0.3);
 	width: 50%;
@@ -49,13 +52,15 @@ img {
 	transition: 0.6s;
 }
 
-.grid > div:hover::before {
+.grid > div:hover::before,
+.grid > a:hover::before {
 	left: 330px;
 	width: 40%;
 	background: rgba(255, 255, 255, 0.3);
 }
 
-.grid > div:hover {
+.grid > div:hover,
+.grid > a:hover {
 	transform: scale(1.1);
 	cursor: pointer;
 }
