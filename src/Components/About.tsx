@@ -1,10 +1,8 @@
 import React from "react";
 import "../ComponentsCSS/About.css";
 import pic from "../images/cool_rigby.png";
-import { Gallary } from "./Gallary";
 
 export function About(): JSX.Element {
-	const AboutImages: string[] = [pic];
 	return (
 		<div>
 			<h1 className="title">About</h1>
