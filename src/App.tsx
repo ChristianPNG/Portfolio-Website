@@ -7,6 +7,7 @@ import { BeatReal } from "./Projects/BeatReal";
 import { Avalanche } from "./Projects/Avalanche";
 import { ClassScheduler } from "./Projects/ClassScheduler";
 import { Portfolio } from "./Projects/Portfolio";
+import { About } from "./Components/About";
 
 function App() {
 	return (
@@ -35,6 +36,10 @@ function App() {
 				<Route
 					path="Portfolio"
 					element={<Portfolio />}
+				></Route>
+				<Route
+					path="About"
+					element={<About />}
 				></Route>
 			</Routes>
 		</BrowserRouter>

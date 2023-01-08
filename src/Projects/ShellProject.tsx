@@ -1,8 +1,10 @@
 import React from "react";
 import { Gallary } from "../Components/Gallary";
 import "../ComponentsCSS/Project-Description.css";
+import pic from "../images/cool_rigby.png";
 
 export function ShellProject(): JSX.Element {
+	const ShellImages = [pic];
 	return (
 		<div className="background">
 			<h1 className="title">Unix Shell</h1>
@@ -45,7 +47,7 @@ export function ShellProject(): JSX.Element {
 				</div>
 			</div>
 			<div className="gallary">
-				<Gallary></Gallary>
+				<Gallary images={ShellImages}></Gallary>
 			</div>
 		</div>
 	);

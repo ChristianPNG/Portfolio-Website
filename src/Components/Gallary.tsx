@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import "../ComponentsCSS/Gallary.css";
-import pic from "../images/cool_rigby.png";
 
-export function Gallary(): JSX.Element {
+interface props {
+	images: string[];
+}
+
+export function Gallary({ images }: props): JSX.Element {
 	const [enlargedImageUrl, setEnlargedImageUrl] = useState<string | null>(
 		null
 	);
-	const images = [pic];
 
 	function enlarge(img: string) {
 		setEnlargedImageUrl(img);

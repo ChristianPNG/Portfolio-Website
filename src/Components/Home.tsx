@@ -2,6 +2,7 @@ import React from "react";
 import "../ComponentsCSS/Home.css";
 import "../App.css";
 import { Project } from "./Projects";
+import { Link } from "react-router-dom";
 
 export function Home(): JSX.Element {
 	function scrollToProj(): void {
@@ -17,7 +18,9 @@ export function Home(): JSX.Element {
 				<div className="title-content">
 					<div className="header">
 						<button onClick={scrollToProj}>Projects</button>
-						<button>About</button>
+						<button>
+							<Link to={"/About"}>About</Link>
+						</button>
 						<button>&#9789;</button>
 					</div>
 					<h1>Christian Rullan</h1>

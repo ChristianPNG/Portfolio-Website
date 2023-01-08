@@ -1,14 +1,21 @@
 import React from "react";
-import { Gallary } from "../Components/Gallary";
-import "../ComponentsCSS/Project-Description.css";
+import "../ComponentsCSS/About.css";
+import pic from "../images/cool_rigby.png";
+import { Gallary } from "./Gallary";
 
-export function Avalanche(): JSX.Element {
+export function About(): JSX.Element {
+	const AboutImages: string[] = [pic];
 	return (
-		<div className="background">
-			<h1 className="title">Avalanche</h1>
+		<div>
+			<h1 className="title">About</h1>
 			<hr style={{ width: "89%" }}></hr>
-			<div className="description-grid-container">
-				<p>
+			<div className="about-container">
+				<img
+					className="about-profile-picture"
+					src={pic}
+					alt=""
+				/>
+				<p className="about-text">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 					do eiusmod tempor incididunt ut labore et dolore magna
 					aliqua. Praesent tristique magna sit amet purus gravida
@@ -30,9 +37,7 @@ export function Avalanche(): JSX.Element {
 					blandit cursus risus at ultrices. Tempus urna et pharetra
 					pharetra massa.
 				</p>
-				<div className="tag-list"></div>
 			</div>
-			<div className="gallary"></div>
 		</div>
 	);
 }
