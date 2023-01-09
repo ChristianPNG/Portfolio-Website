@@ -32,9 +32,7 @@ export function BeatReal(): JSX.Element {
 				</p>
 				<div className="tag-list"></div>
 			</div>
-			<div className="gallary">
-				<Gallary></Gallary>
-			</div>
+			<div className="gallary"></div>
 		</div>
 	);
 }

@@ -4,11 +4,11 @@ import "../ComponentsCSS/Projects.css";
 
 export function Project(): JSX.Element {
 	return (
-		<div
-			id="projects-section-id"
-			className="projects-container"
-		>
-			<div className="grid">
+		<div className="projects-container">
+			<div
+				className="grid"
+				id="projects-section-id"
+			>
 				<Link to={"/Shell"}>
 					<div></div>
 					<div></div>
