@@ -50,10 +50,13 @@ export function Gallary({ images, videos }: ImgProps): JSX.Element {
 				))}
 			</ul>
 			{enlargedImageUrl != null && (
-				<div className="enlarged-image-container">
+				<div
+					className="enlarged-image-container"
+					onClick={() => close()}
+				>
 					{enlargedImageUrl.endsWith(".mp4") ? (
 						<video
-							className="myVideo"
+							className="enlarge"
 							src={enlargedImageUrl}
 							autoPlay={true}
 							muted
@@ -68,12 +71,6 @@ export function Gallary({ images, videos }: ImgProps): JSX.Element {
 							alt=""
 						/>
 					)}
-					<button
-						className="close-button"
-						onClick={close}
-					>
-						X
-					</button>
 				</div>
 			)}
 		</div>

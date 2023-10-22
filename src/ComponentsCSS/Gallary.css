@@ -5,7 +5,7 @@
 
 .item {
 	height: 200px;
-	width: 250px;
+	width: 200px;
 	flex-shrink: 0;
 }
 
@@ -52,33 +52,11 @@
 	width: 87%;
 }
 
-/*.enlarge {
-	display: block;
-	position: absolute;
-	height: 90%;
-	width: 70%;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-}*/
 .enlarge {
+	padding: 20px; /* Example: Adding some padding */
 	max-width: 90%; /* Limit the maximum width to 90% of the screen width */
 	max-height: 90vh; /* Limit the maximum height to 90% of the viewport height */
 	box-sizing: border-box; /* Ensure padding is included in the width */
-}
-
-.close-button {
-	position: absolute;
-	top: 8%;
-	right: 17%;
-	transform: scale(1.5);
-	background-image: inherit;
-	color: white;
-	mix-blend-mode: difference;
-}
-
-.close-button:hover {
-	cursor: pointer;
 }
 
 .enlarged-image-container {
