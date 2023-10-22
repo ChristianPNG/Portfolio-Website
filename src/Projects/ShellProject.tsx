@@ -5,7 +5,7 @@ import pic from "../Resources/cool_rigby.png";
 import ShellDemo from "../Resources/Unix_Shell_Demo.mp4";
 
 export function ShellProject(): JSX.Element {
-	const ShellImages = [pic, pic, pic];
+	const ShellImages = [pic, pic, pic, pic];
 	const ShellVideos: string[] = [ShellDemo];
 	return (
 		<div className="background">

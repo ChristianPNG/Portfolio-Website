@@ -40,9 +40,6 @@
 	background-color: #1d1f20;
 }
 
-img {
-}
-
 .grid > a:before {
 	content: "";
 	background: rgba(255, 255, 255, 0.3);

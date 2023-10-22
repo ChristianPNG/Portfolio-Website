@@ -1,8 +1,3 @@
-.list {
-	display: flex;
-	overflow-x: hidden;
-}
-
 .item {
 	height: 200px;
 	width: 200px;
@@ -10,6 +5,8 @@
 }
 
 .list {
+	display: flex;
+	overflow-x: auto;
 	list-style: none;
 	border: 3px solid #fff;
 	background-color: #181818;
@@ -18,9 +15,9 @@
 }
 
 .item {
-	display: flex;
+	/*	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: center; not necessary?*/
 	color: #fff;
 	font-size: 32px;
 	text-shadow: 0 2px 1px rgba(0, 0, 0, 0.4);

@@ -27,14 +27,6 @@ export function Gallary({ images, videos }: ImgProps): JSX.Element {
 			id="viewport"
 		>
 			<ul className="list">
-				{images.map((img) => (
-					<img
-						src={img}
-						alt=""
-						className="item"
-						onClick={() => enlarge(img)}
-					/>
-				))}
 				{videos.map((vid) => (
 					<video
 						className="item"
@@ -47,6 +39,14 @@ export function Gallary({ images, videos }: ImgProps): JSX.Element {
 					>
 						{"Browser doesn't support video..."}
 					</video>
+				))}
+				{images.map((img) => (
+					<img
+						src={img}
+						alt=""
+						className="item"
+						onClick={() => enlarge(img)}
+					/>
 				))}
 			</ul>
 			{enlargedImageUrl != null && (
