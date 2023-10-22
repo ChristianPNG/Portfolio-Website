@@ -1,6 +1,6 @@
 import React from "react";
 import "../ComponentsCSS/About.css";
-import pic from "../images/cool_rigby.png";
+import pic from "../Resources/cool_rigby.png";
 
 export function About(): JSX.Element {
 	return (

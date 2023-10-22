@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import "../ComponentsCSS/Gallary.css";
 
-interface props {
+/*creating interfaces to allow the passage of data from one 
+  component to another. Here the path string is being passed
+  as input. 
+*/
+interface ImgProps {
 	images: string[];
+	videos: string[];
 }
 
-export function Gallary({ images }: props): JSX.Element {
+export function Gallary({ images, videos }: ImgProps): JSX.Element {
 	const [enlargedImageUrl, setEnlargedImageUrl] = useState<string | null>(
 		null
 	);
@@ -30,14 +35,39 @@ export function Gallary({ images }: props): JSX.Element {
 						onClick={() => enlarge(img)}
 					/>
 				))}
+				{videos.map((vid) => (
+					<video
+						className="item"
+						style={{ width: "355px" }}
+						src={vid}
+						autoPlay={true}
+						muted
+						loop
+						onClick={() => enlarge(vid)}
+					>
+						{"Browser doesn't support video..."}
+					</video>
+				))}
 			</ul>
-			{enlargedImageUrl && (
+			{enlargedImageUrl != null && (
 				<div className="enlarged-image-container">
-					<img
-						className="enlarge"
-						src={enlargedImageUrl}
-						alt=""
-					/>
+					{enlargedImageUrl.endsWith(".mp4") ? (
+						<video
+							className="myVideo"
+							src={enlargedImageUrl}
+							autoPlay={true}
+							muted
+							loop
+						>
+							{"Browser doesn't support video..."}
+						</video>
+					) : (
+						<img
+							className="enlarge"
+							src={enlargedImageUrl}
+							alt=""
+						/>
+					)}
 					<button
 						className="close-button"
 						onClick={close}

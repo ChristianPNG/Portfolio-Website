@@ -52,7 +52,7 @@
 	width: 87%;
 }
 
-.enlarge {
+/*.enlarge {
 	display: block;
 	position: absolute;
 	height: 90%;
@@ -60,6 +60,11 @@
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+}*/
+.enlarge {
+	max-width: 90%; /* Limit the maximum width to 90% of the screen width */
+	max-height: 90vh; /* Limit the maximum height to 90% of the viewport height */
+	box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 .close-button {
@@ -83,4 +88,8 @@
 	width: 100%;
 	left: 0;
 	top: 0;
+	display: flex;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	z-index: 999; /* Adjust z-index as needed */
 }

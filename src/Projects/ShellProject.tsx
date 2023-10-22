@@ -1,10 +1,12 @@
 import React from "react";
 import { Gallary } from "../Components/Gallary";
 import "../ComponentsCSS/Project-Description.css";
-import pic from "../images/cool_rigby.png";
+import pic from "../Resources/cool_rigby.png";
+import ShellDemo from "../Resources/Unix_Shell_Demo.mp4";
 
 export function ShellProject(): JSX.Element {
-	const ShellImages = [pic];
+	const ShellImages = [pic, pic, pic];
+	const ShellVideos: string[] = [ShellDemo];
 	return (
 		<div className="background">
 			<h1 className="title">Unix Shell</h1>
@@ -47,7 +49,10 @@ export function ShellProject(): JSX.Element {
 				</div>
 			</div>
 			<div className="gallary">
-				<Gallary images={ShellImages}></Gallary>
+				<Gallary
+					images={ShellImages}
+					videos={ShellVideos}
+				></Gallary>
 			</div>
 		</div>
 	);
