@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../ComponentsCSS/Projects.css";
+import ShellDemo from "../Resources/Unix_Shell_Demo.mp4";
 
 export function Project(): JSX.Element {
 	return (
@@ -10,8 +11,20 @@ export function Project(): JSX.Element {
 				id="projects-section-id"
 			>
 				<Link to={"/Shell"}>
-					<div></div>
-					<div></div>
+					<div>
+						<video
+							style={{ width: "100%", height: "100%" }}
+							src={ShellDemo}
+							autoPlay={true}
+							muted
+							loop
+						>
+							{"Browser doesn't support video..."}
+						</video>
+					</div>
+					<div>
+						<p style={{ textAlign: "center" }}>Unix Shell</p>
+					</div>
 				</Link>
 				<Link to={"/BeatReal"}>
 					<div></div>

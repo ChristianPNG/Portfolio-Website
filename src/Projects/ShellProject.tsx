@@ -1,11 +1,15 @@
 import React from "react";
 import { Gallary } from "../Components/Gallary";
 import "../ComponentsCSS/Project-Description.css";
-import pic from "../Resources/cool_rigby.png";
+//import pic from "../Resources/cool_rigby.png";
 import ShellDemo from "../Resources/Unix_Shell_Demo.mp4";
+import pic1 from "../Resources/ShellResources/1.png";
+import pic2 from "../Resources/ShellResources/2.png";
+import pic3 from "../Resources/ShellResources/3.png";
+import pic4 from "../Resources/ShellResources/4.png";
 
 export function ShellProject(): JSX.Element {
-	const ShellImages = [pic, pic, pic, pic];
+	let ShellImages: string[] = [pic1, pic2, pic3, pic4];
 	const ShellVideos: string[] = [ShellDemo];
 	return (
 		<div className="background">
@@ -13,26 +17,38 @@ export function ShellProject(): JSX.Element {
 			<hr style={{ width: "89%" }}></hr>
 			<div className="description-grid-container">
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-					do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Praesent tristique magna sit amet purus gravida
-					quis. Ullamcorper malesuada proin libero nunc consequat
-					interdum. Commodo quis imperdiet massa tincidunt nunc
-					pulvinar sapien. Adipiscing commodo elit at imperdiet dui
-					accumsan sit. Ipsum suspendisse ultrices gravida dictum
-					fusce ut placerat orci nulla. Ut aliquam purus sit amet
-					luctus venenatis. Adipiscing tristique risus nec feugiat in
-					fermentum posuere urna. Tincidunt praesent semper feugiat
-					nibh. Libero justo laoreet sit amet. Felis imperdiet proin
-					fermentum leo vel orci porta. Feugiat scelerisque varius
-					morbi enim nunc. Turpis egestas maecenas pharetra convallis
-					posuere morbi leo urna. Posuere urna nec tincidunt praesent
-					semper. Donec adipiscing tristique risus nec feugiat in
-					fermentum. Condimentum vitae sapien pellentesque habitant.
-					Accumsan tortor posuere ac ut consequat semper viverra.
-					Mattis enim ut tellus elementum. Aliquam vestibulum morbi
-					blandit cursus risus at ultrices. Tempus urna et pharetra
-					pharetra massa.
+					a powerful and feature-rich Unix shell that combines the
+					robustness of a traditional Linux shell with innovative new
+					capabilities. It is designed to provide a seamless and
+					enhanced command-line interface. Project was built using C
+					and window's subsystem for linux. <br></br>
+					<ul>
+						<li>
+							Developed solo on a mock Unix Shell/Command prompt
+							that is executable through Linux
+						</li>
+						<li>
+							Implemented features similar to normal Linux
+							commands such as ls, pwd, nano, cd, etc.
+						</li>
+						<li>
+							Supported functionality for wildcards (*, ?) and
+							signal handling (CTRL-C)
+						</li>
+						<li>
+							Added additional functionality for its own unique
+							set of commands like setting/getting environmental
+							variables and customizable prompt prefix.
+						</li>
+					</ul>
+					<a
+						href="https://github.com/ChristianPNG/UnixShell"
+						target="_blank"
+						rel="noopener noreferrer"
+						style={{ color: "cyan" }}
+					>
+						Visit Github/UnixShell.com
+					</a>
 				</p>
 				<div className="tag-list">
 					<div>Linux</div>
