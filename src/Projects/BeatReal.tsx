@@ -9,30 +9,26 @@ export function BeatReal(): JSX.Element {
 			<hr style={{ width: "89%" }}></hr>
 			<div className="description-grid-container">
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-					do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Praesent tristique magna sit amet purus gravida
-					quis. Ullamcorper malesuada proin libero nunc consequat
-					interdum. Commodo quis imperdiet massa tincidunt nunc
-					pulvinar sapien. Adipiscing commodo elit at imperdiet dui
-					accumsan sit. Ipsum suspendisse ultrices gravida dictum
-					fusce ut placerat orci nulla. Ut aliquam purus sit amet
-					luctus venenatis. Adipiscing tristique risus nec feugiat in
-					fermentum posuere urna. Tincidunt praesent semper feugiat
-					nibh. Libero justo laoreet sit amet. Felis imperdiet proin
-					fermentum leo vel orci porta. Feugiat scelerisque varius
-					morbi enim nunc. Turpis egestas maecenas pharetra convallis
-					posuere morbi leo urna. Posuere urna nec tincidunt praesent
-					semper. Donec adipiscing tristique risus nec feugiat in
-					fermentum. Condimentum vitae sapien pellentesque habitant.
-					Accumsan tortor posuere ac ut consequat semper viverra.
-					Mattis enim ut tellus elementum. Aliquam vestibulum morbi
-					blandit cursus risus at ultrices. Tempus urna et pharetra
-					pharetra massa.
+					<ul>
+						<li>Help develop a social media site using MEAN stack that incorporated music and Spotify</li>
+						<li>Collaborated in a group of 4 other people using git and GitHub as our version control</li>
+						<li>Created both a front-end and back-end. Back-end interacted with the NoSQL database MongoDB
+						with CRUD operations. These dealt with organizing user information such as usernames, friends, etc.
+						included nested data such as posts and comments</li>
+						<li>Front-end involved creating a sleek user interface for the profile, reels, and comment sections.</li>
+					</ul>
 				</p>
-				<div className="tag-list"></div>
-			</div>
-			<div className="gallary"></div>
+				<div className="tag-list">				
+					<div>API</div>
+					<div>Angular</div>
+					<div>Front-End</div>
+					<div>Back-End</div>
+					<div>Express</div>
+					<div>Axios</div>
+					<div>MongoDB</div>
+					<div>NodeJS</div></div>
+				</div>
+			<div className="gallary"><Gallary images={[]} videos={[]}></Gallary></div>
 		</div>
 	);
 }

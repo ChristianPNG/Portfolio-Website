@@ -9,30 +9,23 @@ export function Avalanche(): JSX.Element {
 			<hr style={{ width: "89%" }}></hr>
 			<div className="description-grid-container">
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-					do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Praesent tristique magna sit amet purus gravida
-					quis. Ullamcorper malesuada proin libero nunc consequat
-					interdum. Commodo quis imperdiet massa tincidunt nunc
-					pulvinar sapien. Adipiscing commodo elit at imperdiet dui
-					accumsan sit. Ipsum suspendisse ultrices gravida dictum
-					fusce ut placerat orci nulla. Ut aliquam purus sit amet
-					luctus venenatis. Adipiscing tristique risus nec feugiat in
-					fermentum posuere urna. Tincidunt praesent semper feugiat
-					nibh. Libero justo laoreet sit amet. Felis imperdiet proin
-					fermentum leo vel orci porta. Feugiat scelerisque varius
-					morbi enim nunc. Turpis egestas maecenas pharetra convallis
-					posuere morbi leo urna. Posuere urna nec tincidunt praesent
-					semper. Donec adipiscing tristique risus nec feugiat in
-					fermentum. Condimentum vitae sapien pellentesque habitant.
-					Accumsan tortor posuere ac ut consequat semper viverra.
-					Mattis enim ut tellus elementum. Aliquam vestibulum morbi
-					blandit cursus risus at ultrices. Tempus urna et pharetra
-					pharetra massa.
+					<ul>
+						<li>Collaborative game development of a simple yet smooth flash game about a marshmallow trying to get
+						the highest score possible by climbing falling blocks</li>
+						<li>Game can be ran at high frame rates with smooth movement and collision detection</li>
+						<li>Designed with no added libraries and only on simple js and css</li>
+					</ul>
 				</p>
-				<div className="tag-list"></div>
+				<div className="tag-list">
+					<div>CSS</div>
+					<div>HTML</div>
+					<div>Sound Design</div>
+					<div>Game Design</div>
+					<div>Engine</div>
+					<div>Collision Detection</div>
+				</div>
 			</div>
-			<div className="gallary"></div>
+			<div className="gallary"><Gallary images={[]} videos={[]}></Gallary></div>
 		</div>
 	);
 }

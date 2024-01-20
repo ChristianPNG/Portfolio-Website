@@ -60,8 +60,6 @@ export function ShellProject(): JSX.Element {
 					<div>Signals</div>
 					<div>Files</div>
 					<div>Wildcards</div>
-					<div>Arguments</div>
-					<div>Environment Variables</div>
 				</div>
 			</div>
 			<div className="gallary">
