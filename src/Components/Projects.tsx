@@ -11,23 +11,25 @@ export function Project(): JSX.Element {
 				id="projects-section-id"
 			>
 				<Link to={"/Shell"}>
-					<div>
+					<div className="video-insert">
 						<video
-							style={{ width: "100%", height: "100%" }}
+							
 							src={ShellDemo}
 							autoPlay={true}
 							muted
 							loop
+							width="100%"
+							height="100%"
 						>
-							{"Browser doesn't support video..."}
+							
 						</video>
 					</div>
 					<div>
-						<p style={{ textAlign: "center" }}>Unix Shell</p>
+						<p style={{ textAlign: "center", width: "100%" }}>Unix Shell</p>
 					</div>
 				</Link>
 				<Link to={"/BeatReal"}>
-					<div></div>
+					<div style={{ height: "100%" }}>yes</div>
 					<div></div>
 				</Link>
 				<Link to={"/Avalanche"}>

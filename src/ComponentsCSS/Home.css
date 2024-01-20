@@ -18,12 +18,12 @@
 
 .projects-screen {
 	height: 100vh;
-	min-height: 610px;
+	/*min-height: 610px;*/
 }
 
 .container {
 	height: 100%;
-	min-height: 1230px;
+	/*min-height: 1230px;*/
 	width: inherit;
 	overflow-x: hidden;
 }
