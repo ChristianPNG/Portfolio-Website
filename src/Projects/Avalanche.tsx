@@ -1,8 +1,15 @@
 import React from "react";
 import { Gallary } from "../Components/Gallary";
 import "../ComponentsCSS/Project-Description.css";
+import AvalDemo from "../Resources/AvalResources/Avalanche_Demo.mp4";
+import pic1 from "../Resources/AvalResources/1.png";
+import pic2 from "../Resources/AvalResources/2.png";
+import pic3 from "../Resources/AvalResources/3.png";
+import pic4 from "../Resources/AvalResources/4.png";
 
 export function Avalanche(): JSX.Element {
+	let AvalImages: string[] = [pic1, pic2, pic3, pic4];
+	const AvalVideos: string[] = [AvalDemo];
 	return (
 		<div className="background">
 			<h1 className="title">Avalanche</h1>
@@ -25,7 +32,7 @@ export function Avalanche(): JSX.Element {
 					<div>Collision Detection</div>
 				</div>
 			</div>
-			<div className="gallary"><Gallary images={[]} videos={[]}></Gallary></div>
+			<div className="gallary"><Gallary images={AvalImages} videos={AvalVideos}></Gallary></div>
 		</div>
 	);
 }

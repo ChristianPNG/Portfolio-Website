@@ -64,4 +64,10 @@
 	cursor: pointer;
 }
 
-
+.center-text{
+	display: flex;
+  align-items: center; /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+  font-weight: bolder;
+  font-size:x-large;
+}

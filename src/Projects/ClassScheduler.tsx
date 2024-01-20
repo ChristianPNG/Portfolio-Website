@@ -3,7 +3,7 @@ import { Gallary } from "../Components/Gallary";
 import "../ComponentsCSS/Project-Description.css";
 
 export function ClassScheduler(): JSX.Element {
-	return (
+	return ( 
 		<div className="background">
 			<h1 className="title">Class Scheduler</h1>
 			<hr style={{ width: "89%" }}></hr>
@@ -28,7 +28,7 @@ export function ClassScheduler(): JSX.Element {
 					<div>React</div>
 				</div>
 			</div>
-			<div className="gallary"><Gallary images={[]} videos={[]}></Gallary></div>
+			<div className="gallary"></div>
 		</div>
 	);
 }
