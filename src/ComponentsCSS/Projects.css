@@ -14,7 +14,7 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 4ch;
-	grid-auto-rows: minmax(0, 1fr); /* very necessary to be explicit or else zoom alignments go off*/
+	/*grid-auto-rows: minmax(0, 1fr); */
 }
 
 .box-4 {
@@ -64,16 +64,4 @@
 	cursor: pointer;
 }
 
-.video-insert{
-	max-height: 50%;
-	/*
-    right: 0; 
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-    width: auto; 
-    height: auto; 
-    z-index: -100;
-    background-size: cover;
-    overflow: hidden; */
-}
+

@@ -11,7 +11,7 @@ export function Project(): JSX.Element {
 				id="projects-section-id"
 			>
 				<Link to={"/Shell"}>
-					<div className="video-insert">
+					<div>
 						<video
 							
 							src={ShellDemo}
@@ -40,7 +40,7 @@ export function Project(): JSX.Element {
 					to={"/ClassScheduler"}
 					className="box-4"
 				>
-					<div></div>
+					<div>yes</div>
 					<div></div>
 				</Link>
 				<Link
