@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../ComponentsCSS/Projects.css";
 import ShellDemo from "../Resources/Unix_Shell_Demo.mp4";
 import AvalDemo from "../Resources/AvalResources/Avalanche_Demo.mp4";
+import BeatRealDemo from "../Resources/BeatRealResources/beatreal_demo.mp4"
 import { Avalanche } from '../Projects/Avalanche';
 
 
@@ -32,8 +33,17 @@ export function Project(): JSX.Element {
 					</div>
 				</Link>
 				<Link to={"/BeatReal"}>
-					<div style={{ height: "100%" }}>yes</div>
-					<div></div>
+					<div><video
+							src={BeatRealDemo}
+							autoPlay={true}
+							muted
+							loop
+							width="100%"
+							height="100%"
+						></video></div>
+					<div className="center-text">
+						BeatReal
+					</div>
 				</Link>
 				<Link to={"/Avalanche"}>
 					<div>

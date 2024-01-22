@@ -1,8 +1,15 @@
 import React from "react";
 import { Gallary } from "../Components/Gallary";
 import "../ComponentsCSS/Project-Description.css";
+import demo from "../Resources/BeatRealResources/beatreal_demo.mp4"
+import pic1 from "../Resources/BeatRealResources/1.png";
+import pic2 from "../Resources/BeatRealResources/2.png";
+import pic3 from "../Resources/BeatRealResources/3.png";
+import pic4 from "../Resources/BeatRealResources/4.png";
 
 export function BeatReal(): JSX.Element {
+	let BeatRealImages: string[] = [pic1, pic2, pic3, pic4];
+	const BeatRealVideos: string[] = [demo];
 	return (
 		<div className="background">
 			<h1 className="title">Beat Real</h1>
@@ -28,7 +35,7 @@ export function BeatReal(): JSX.Element {
 					<div>MongoDB</div>
 					<div>NodeJS</div></div>
 				</div>
-			<div className="gallary"><Gallary images={[]} videos={[]}></Gallary></div>
+			<div className="gallary"><Gallary images={BeatRealImages} videos={BeatRealVideos}></Gallary></div>
 		</div>
 	);
 }
