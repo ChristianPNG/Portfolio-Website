@@ -22,6 +22,23 @@ export function Avalanche(): JSX.Element {
 						<li>Game can be ran at high frame rates with smooth movement and collision detection</li>
 						<li>Designed with no added libraries and only on simple js and css</li>
 					</ul>
+					<a
+						href="https://github.com/AidanTran/Avalanche"
+						target="_blank"
+						rel="noopener noreferrer"
+						style={{ color: "cyan", fontSize: "smaller", textDecoration: "underline"}}
+					>
+						github.com/Avalanche
+					</a>
+					<br></br>
+					<a
+						href="https://aidantran.github.io/Avalanche/"
+						target="_blank"
+						rel="noopener noreferrer"
+						style={{ color: "cyan", fontSize: "smaller", textDecoration: "underline"}}
+					>
+						Play the game
+					</a>
 				</p>
 				<div className="tag-list">
 					<div>CSS</div>

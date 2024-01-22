@@ -24,6 +24,23 @@ export function BeatReal(): JSX.Element {
 						included nested data such as posts and comments</li>
 						<li>Front-end involved creating a sleek user interface for the profile, reels, and comment sections.</li>
 					</ul>
+					<a
+						href="https://github.com/swetha-sankar/BeatReal-Frontend"
+						target="_blank"
+						rel="noopener noreferrer"
+						style={{ color: "cyan", fontSize: "smaller", textDecoration: "underline"}}
+					>
+						github.com/BeatReal-FrontEnd
+					</a>
+					<br></br>
+					<a
+						href="https://github.com/swetha-sankar/BeatReal"
+						target="_blank"
+						rel="noopener noreferrer"
+						style={{ color: "cyan", fontSize: "smaller", textDecoration: "underline"}}
+					>
+						github.com/BeatReal-BackEnd
+					</a>
 				</p>
 				<div className="tag-list">				
 					<div>API</div>

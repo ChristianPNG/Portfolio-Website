@@ -45,9 +45,9 @@ export function ShellProject(): JSX.Element {
 						href="https://github.com/ChristianPNG/UnixShell"
 						target="_blank"
 						rel="noopener noreferrer"
-						style={{ color: "cyan" }}
+						style={{ color: "cyan", fontSize: "smaller", textDecoration: "underline"}}
 					>
-						Visit Github/UnixShell.com
+						github/UnixShell.com
 					</a>
 				</p>
 				<div className="tag-list">

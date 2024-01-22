@@ -24,6 +24,14 @@ export function ClassScheduler(): JSX.Element {
 						<li>Utilized agile framework such as doing sprints and having a product backlog. Totaled 70+ commits</li>
 						<li>Tested the site through the Jest testing framework resulting in large code coverage and consistency.</li>
 					</ul>
+					<a
+						href="https://github.com/UD-CISC275-S22/cis-scheduler-team-21"
+						target="_blank"
+						rel="noopener noreferrer"
+						style={{ color: "cyan", fontSize: "smaller", textDecoration: "underline"}}
+					>
+						github.com/CIS-Scheduler
+					</a>
 				</p>
 				<div className="tag-list">
 					<div>Typescript</div>
