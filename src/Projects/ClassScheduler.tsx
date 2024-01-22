@@ -1,8 +1,15 @@
 import React from "react";
 import { Gallary } from "../Components/Gallary";
 import "../ComponentsCSS/Project-Description.css";
+import demo from "../Resources/SchedulerResources/Scheduler_Demo.mp4"
+import pic1 from "../Resources/SchedulerResources/1.png";
+import pic2 from "../Resources/SchedulerResources/2.png";
+import pic3 from "../Resources/SchedulerResources/3.png";
+import pic4 from "../Resources/SchedulerResources/4.png";
 
 export function ClassScheduler(): JSX.Element {
+	let SchedulerImages: string[] = [pic1, pic2, pic3, pic4];
+	const SchedulerVideos: string[] = [demo];
 	return ( 
 		<div className="background">
 			<h1 className="title">Class Scheduler</h1>
@@ -28,7 +35,7 @@ export function ClassScheduler(): JSX.Element {
 					<div>React</div>
 				</div>
 			</div>
-			<div className="gallary"></div>
+			<div className="gallary"><Gallary images={SchedulerImages} videos={SchedulerVideos}></Gallary></div>
 		</div>
 	);
 }
