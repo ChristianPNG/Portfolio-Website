@@ -11,6 +11,7 @@
 
 .grid {
 	width: 80%;
+	height: 90%;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 4ch;
@@ -69,5 +70,5 @@
   align-items: center; /* Vertical centering */
   justify-content: center; /* Horizontal centering */
   font-weight: bolder;
-  font-size:x-large;
+  font-size:17pt;
 }

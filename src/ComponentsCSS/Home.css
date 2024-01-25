@@ -2,7 +2,7 @@
 	width: inherit;
 	display: flex;
 	height: 100vh;
-	min-height: 610px;
+	/*min-height: 610px;*/
 	justify-content: center;
 	align-items: center;
 	color: white;
@@ -22,7 +22,6 @@
 }
 
 .container {
-	height: 100%;
 	/*min-height: 1230px;*/
 	width: inherit;
 	overflow-x: hidden;
@@ -31,6 +30,49 @@
 .title-content {
 	color: white;
 	z-index: 1;
+}
+
+.intro{
+	font-size: 40pt;
+	font-weight: 900;
+}
+
+.text{
+	width: 40%;
+	height: 70%;
+	font-size: 11pt;
+}
+
+.indent-container{
+	height: 60%;
+	width: 3%;
+}
+
+.indent-sphere{
+	border-radius: 50%;
+	background:rgb(179, 171, 163);
+	height: 3ch;
+	width: 3ch;
+	z-index: 2;
+}
+
+.indent-line{
+	position: relative;
+	background: linear-gradient(
+		rgb(179, 171, 163),
+		rgb(179, 171, 163),
+		rgb(77, 71, 69),
+		rgb(66, 60, 56),
+		rgb(43, 38, 35),
+		rgb(31, 27, 25),
+		rgb(28, 25, 23),
+		rgb(28, 25, 23)
+	);
+	height: 60ch;
+	width: .5ch;
+	left: 8pt;
+	bottom: 20px;
+	z-index: 2;
 }
 
 .sphere1 {
@@ -44,6 +86,7 @@
 	width: 300px;
 	margin: 0;
 	background: radial-gradient(circle at 70px 70px, rgb(255, 253, 252), #000);
+	z-index: 4;
 }
 
 .sphere2 {

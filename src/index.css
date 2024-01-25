@@ -1,8 +1,17 @@
+:root{
+	--light:#f1f5f9;
+	--dark:rgb(28, 25, 23);
+}
+.light-mode{ 
+	--dark:#f1f5f9;
+	--light:rgb(28, 25, 23); 
+	/* flipped color variables for the toggle */
+}
+
 html {
 	scroll-behavior: smooth;
 	overflow-y: overlay;
 	overflow-x: hidden;
-	background-color: rgb(28, 25, 23);
 }
 
 body {
@@ -14,6 +23,7 @@ body {
 		"Helvetica Neue", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background-color: var(--dark);
 }
 
 code {

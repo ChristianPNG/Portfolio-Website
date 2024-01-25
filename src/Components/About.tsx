@@ -1,6 +1,5 @@
 import React from "react";
 import "../ComponentsCSS/About.css";
-import pic from "../Resources/cool_rigby.png";
 
 export function About(): JSX.Element {
 	return (
@@ -10,7 +9,7 @@ export function About(): JSX.Element {
 			<div className="about-container">
 				<img
 					className="about-profile-picture"
-					src={pic}
+					
 					alt=""
 				/>
 				<p className="about-text">
