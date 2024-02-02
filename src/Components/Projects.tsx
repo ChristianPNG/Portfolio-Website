@@ -5,7 +5,7 @@ import ShellDemo from "../Resources/Unix_Shell_Demo.mp4";
 import AvalDemo from "../Resources/AvalResources/Avalanche_Demo.mp4";
 import BeatRealDemo from "../Resources/BeatRealResources/beatreal_demo.mp4"
 import SchedulerDemo from "../Resources/SchedulerResources/Scheduler_Demo.mp4"
-import { Avalanche } from '../Projects/Avalanche';
+import PortfolioDemo from "../Resources/PortfolioResources/Portoflio_Demo.mp4"
 
 
 export function Project(): JSX.Element {
@@ -82,8 +82,15 @@ export function Project(): JSX.Element {
 					to={"/Portfolio"}
 					className="box-5"
 				>
-					<div></div>
-					<div></div>
+					<div><video
+						src={PortfolioDemo}
+						autoPlay={true}
+						muted
+						loop
+						width="100%"
+						height="100%"
+					></video></div>
+					<div className="center-text">Portfolio Website</div>
 				</Link>
 			</div>
 		</div>

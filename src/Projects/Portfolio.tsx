@@ -1,38 +1,51 @@
 import React from "react";
 import { Gallary } from "../Components/Gallary";
 import "../ComponentsCSS/Project-Description.css";
+import demo from "../Resources/PortfolioResources/Portoflio_Demo.mp4"
+import pic1 from "../Resources/PortfolioResources/1.png";
+import pic2 from "../Resources/PortfolioResources/2.png";
+import pic3 from "../Resources/PortfolioResources/3.png";
 
 export function Portfolio(): JSX.Element {
+	let PortfolioImages: string[] = [pic1, pic2, pic3];
+	const PortfolioVideos: string[] = [demo];
 	return (
 		<div className="background">
 			<h1 className="title">Portfolio Website</h1>
 			<hr style={{ width: "89%" }}></hr>
 			<div className="description-grid-container">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-					do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Praesent tristique magna sit amet purus gravida
-					quis. Ullamcorper malesuada proin libero nunc consequat
-					interdum. Commodo quis imperdiet massa tincidunt nunc
-					pulvinar sapien. Adipiscing commodo elit at imperdiet dui
-					accumsan sit. Ipsum suspendisse ultrices gravida dictum
-					fusce ut placerat orci nulla. Ut aliquam purus sit amet
-					luctus venenatis. Adipiscing tristique risus nec feugiat in
-					fermentum posuere urna. Tincidunt praesent semper feugiat
-					nibh. Libero justo laoreet sit amet. Felis imperdiet proin
-					fermentum leo vel orci porta. Feugiat scelerisque varius
-					morbi enim nunc. Turpis egestas maecenas pharetra convallis
-					posuere morbi leo urna. Posuere urna nec tincidunt praesent
-					semper. Donec adipiscing tristique risus nec feugiat in
-					fermentum. Condimentum vitae sapien pellentesque habitant.
-					Accumsan tortor posuere ac ut consequat semper viverra.
-					Mattis enim ut tellus elementum. Aliquam vestibulum morbi
-					blandit cursus risus at ultrices. Tempus urna et pharetra
-					pharetra massa.
+			<p>
+					<ul>
+						<li>Collaborated with another student using React to develop a class scheduler using data from every
+						class in UD</li>
+						<li>Incorporated features such as saving progress throughout multiple sessions, creating multiple
+						schedules, class searching, editing classes, editing semesters, and selecting tracks for CS majors</li>
+						<li>Utilized agile framework such as doing sprints and having a product backlog. Totaled 70+ commits</li>
+						<li>Tested the site through the Jest testing framework resulting in large code coverage and consistency.</li>
+					</ul>
+					<a
+						href="https://github.com/ChristianPNG/Portfolio-Website"
+						target="_blank"
+						rel="noopener noreferrer"
+						style={{ color: "cyan", fontSize: "smaller", textDecoration: "underline"}}
+					>
+						github.com/Portfolio_Website
+					</a>
 				</p>
-				<div className="tag-list"></div>
+				<div className="tag-list">
+					<div>Typescript</div>
+					<div>Agile</div>
+					<div>Jest</div>
+					<div>Unit Testing</div>
+					<div>Github</div>
+					<div>JSON</div>
+					<div>React</div>
+				</div>
 			</div>
-			<div className="gallary"></div>
+			<div className="gallary"><Gallary
+					images={PortfolioImages}
+					videos={PortfolioVideos}
+				></Gallary></div>
 		</div>
 	);
 }

@@ -1,5 +1,4 @@
 .projects-container { 
-	/* just a way to center the whole container. inside of the container will be the grid layout*/
 	display: flex;
 	position: relative;
 	color: white;
@@ -15,15 +14,6 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 4ch;
-	/*grid-auto-rows: minmax(0, 1fr); */
-}
-
-.box-4 {
-	/* without this the grid won't center the bottom two boxes*/
-	margin-left: 50%;
-}
-.box-5 {
-	margin-left: 50%;
 }
 
 .grid > a {
@@ -71,4 +61,12 @@
   justify-content: center; /* Horizontal centering */
   font-weight: bolder;
   font-size:17pt;
+}
+
+.box-4 {
+	/* without this the grid won't center the bottom two boxes*/
+	margin-left: 50%;
+}
+.box-5 {
+	margin-left: 50%;
 }
