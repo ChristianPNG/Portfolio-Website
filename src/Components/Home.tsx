@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../ComponentsCSS/Home.css";
 import "../App.css";
 import { Project } from "./Projects";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 export function Home(): JSX.Element {
 	const [toggle, setToggle] = useState(false);
@@ -11,9 +11,9 @@ export function Home(): JSX.Element {
 			.getElementById("projects-section-id")!
 			.scrollIntoView({ behavior: "smooth" });
 	}
-	function toggleLight(): void{
+	/*function toggleLight(): void{
 		setToggle(!toggle);
-	}
+	}*/
 	useEffect(() =>{
 		document.body.classList.toggle('light-mode');
 	});
