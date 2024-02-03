@@ -10,8 +10,10 @@ import { Portfolio } from "./Projects/Portfolio";
 import { About } from "./Components/About";
 
 function App() {
+	const uri = window.location.pathname;
+	console.log(uri)
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename={uri}>
 			<Routes>
 				<Route
 					path="/"

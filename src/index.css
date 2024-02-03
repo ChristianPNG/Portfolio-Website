@@ -2,11 +2,6 @@
 	--light:#f1f5f9;
 	--dark:rgb(28, 25, 23);
 }
-.light-mode{ 
-	--dark:#f1f5f9;
-	--light:rgb(28, 25, 23); 
-	/* flipped color variables for the toggle */
-}
 
 html {
 	scroll-behavior: smooth;
@@ -24,6 +19,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background-color: var(--dark);
+	z-index: 1;
 }
 
 code {

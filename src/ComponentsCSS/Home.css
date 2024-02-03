@@ -7,13 +7,23 @@
 	align-items: center;
 	color: white;
 	background: linear-gradient(
-		rgb(77, 71, 69),
+		rgb(70, 64, 63),
 		rgb(66, 60, 56),
 		rgb(43, 38, 35),
 		rgb(31, 27, 25),
 		rgb(28, 25, 23),
 		rgb(28, 25, 23)
 	);
+	z-index: 2;
+}
+
+.background-image{
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	opacity: 50%;
+	mask-image: linear-gradient(rgb(28, 25, 23) 40%, transparent);
+	z-index: 2;
 }
 
 .projects-screen {
@@ -29,7 +39,7 @@
 
 .title-content {
 	color: white;
-	z-index: 1;
+	z-index: 3;
 }
 
 .intro{
@@ -40,12 +50,14 @@
 .text{
 	width: 40%;
 	height: 70%;
-	font-size: 11pt;
+	font-size: 14pt;
+	z-index: 3;
 }
 
 .indent-container{
 	height: 60%;
 	width: 3%;
+	z-index: 3;
 }
 
 .indent-sphere{
@@ -53,7 +65,7 @@
 	background:rgb(179, 171, 163);
 	height: 3ch;
 	width: 3ch;
-	z-index: 2;
+	z-index: 3;
 }
 
 .indent-line{
@@ -62,11 +74,11 @@
 		rgb(179, 171, 163),
 		rgb(179, 171, 163),
 		rgb(77, 71, 69),
-		rgb(66, 60, 56),
-		rgb(43, 38, 35),
-		rgb(31, 27, 25),
-		rgb(28, 25, 23),
-		rgb(28, 25, 23)
+		rgba(66, 60, 56, 0.51),
+		rgba(43, 38, 35, 0.585),
+		rgba(31, 27, 25, 0.156),
+		rgba(28, 25, 23, 0.04),
+		#1c191700
 	);
 	height: 60ch;
 	width: .5ch;
@@ -110,6 +122,7 @@
 	gap: 30px;
 	top: 3%;
 	right: 10%;
+	z-index: 3;
 }
 
 button,
