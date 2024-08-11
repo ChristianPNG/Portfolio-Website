@@ -1,144 +1,156 @@
 .title-background {
-	width: inherit;
-	display: flex;
-	height: 100vh;
-	/*min-height: 610px;*/
-	justify-content: center;
-	align-items: center;
-	color: white;
-	background: linear-gradient(
-		rgb(70, 64, 63),
-		rgb(66, 60, 56),
-		rgb(43, 38, 35),
-		rgb(31, 27, 25),
-		rgb(28, 25, 23),
-		rgb(28, 25, 23)
-	);
-	z-index: 2;
+    width: inherit;
+    display: flex;
+    height: 100vh;
+    /*min-height: 610px;*/
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: linear-gradient(
+        rgb(70, 64, 63),
+        rgb(66, 60, 56),
+        rgb(43, 38, 35),
+        rgb(31, 27, 25),
+        rgb(28, 25, 23),
+        rgb(28, 25, 23)
+    );
+    z-index: 2;
 }
 
-.background-image{
-	position: absolute;
-	width: 100%;
-	height: 50%;
-	opacity: 50%;
-	mask-image: linear-gradient(rgb(28, 25, 23) 40%, transparent);
-	z-index: 2;
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    opacity: 50%;
+    mask-image: linear-gradient(rgb(28, 25, 23) 40%, transparent);
+    z-index: 2;
 }
 
 .projects-screen {
-	height: 100vh;
-	/*min-height: 610px;*/
+    height: 100vh;
+    /*min-height: 610px;*/
 }
 
 .container {
-	/*min-height: 1230px;*/
-	width: inherit;
-	overflow-x: hidden;
+    /*min-height: 1230px;*/
+    width: inherit;
+    overflow-x: hidden;
 }
 
 .title-content {
-	color: white;
-	z-index: 3;
+    color: white;
+    z-index: 3;
 }
 
-.intro{
-	font-size: 40pt;
-	font-weight: 900;
+.intro {
+    font-size: 40pt;
+    font-weight: 900;
 }
 
-.text{
-	width: 40%;
-	height: 70%;
-	font-size: 14pt;
-	z-index: 3;
+.text {
+    width: 40%;
+    height: 70%;
+    font-size: 14pt;
+    z-index: 3;
+}
+.paragraphs {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.indent-container{
-	height: 60%;
-	width: 3%;
-	z-index: 3;
+.paragraphs > p:nth-child(2n) {
+    flex: 1 1 95%;
 }
 
-.indent-sphere{
-	border-radius: 50%;
-	background:rgb(179, 171, 163);
-	height: 3ch;
-	width: 3ch;
-	z-index: 3;
+.paragraphs > p:nth-child(2n-1) {
+    flex: 1 1 5%;
 }
 
-.indent-line{
-	position: relative;
-	background: linear-gradient(
-		rgb(179, 171, 163),
-		rgb(179, 171, 163),
-		rgb(77, 71, 69),
-		rgba(66, 60, 56, 0.51),
-		rgba(43, 38, 35, 0.585),
-		rgba(31, 27, 25, 0.156),
-		rgba(28, 25, 23, 0.04),
-		#1c191700
-	);
-	height: 60ch;
-	width: .5ch;
-	left: 8pt;
-	bottom: 20px;
-	z-index: 2;
+.indent-container {
+    height: 60%;
+    width: 3%;
+    z-index: 3;
+}
+
+.indent-sphere {
+    border-radius: 50%;
+    background: rgb(179, 171, 163);
+    height: 3ch;
+    width: 3ch;
+    z-index: 3;
+}
+
+.indent-line {
+    position: relative;
+    background: linear-gradient(
+        rgb(179, 171, 163),
+        rgb(179, 171, 163),
+        rgb(77, 71, 69),
+        rgba(66, 60, 56, 0.51),
+        rgba(43, 38, 35, 0.585),
+        rgba(31, 27, 25, 0.156),
+        rgba(28, 25, 23, 0.04),
+        #1c191700
+    );
+    height: 60ch;
+    width: 0.5ch;
+    left: 8pt;
+    bottom: 20px;
+    z-index: 2;
 }
 
 .sphere1 {
-	position: absolute;
-	top: -10%;
-	left: -5%;
-	display: block;
-	background: black;
-	border-radius: 50%;
-	height: 300px;
-	width: 300px;
-	margin: 0;
-	background: radial-gradient(circle at 70px 70px, rgb(255, 253, 252), #000);
-	z-index: 4;
+    position: absolute;
+    top: -10%;
+    left: -5%;
+    display: block;
+    background: black;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+    background: radial-gradient(circle at 70px 70px, rgb(255, 253, 252), #000);
+    z-index: 4;
 }
 
 .sphere2 {
-	position: absolute;
-	top: 25%;
-	right: -13%;
-	display: block;
-	background: black;
-	border-radius: 50%;
-	height: 500px;
-	width: 500px;
-	margin: 0;
-	z-index: 1;
-	background: radial-gradient(circle, rgb(179, 171, 163), #000);
+    position: absolute;
+    top: 25%;
+    right: -13%;
+    display: block;
+    background: black;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    margin: 0;
+    z-index: 1;
+    background: radial-gradient(circle, rgb(179, 171, 163), #000);
 }
 
 .header {
-	position: absolute;
-	display: flex;
-	flex-direction: row;
-	gap: 30px;
-	top: 3%;
-	right: 10%;
-	z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    top: 3%;
+    right: 10%;
+    z-index: 3;
 }
 
 button,
 a {
-	background: transparent;
-	color: white;
-	border-radius: 3ch;
-	border-color: transparent;
-	font-size: large;
-	transition: all 0.2s;
-	text-decoration: none;
+    background: transparent;
+    color: white;
+    border-radius: 3ch;
+    border-color: transparent;
+    font-size: large;
+    transition: all 0.2s;
+    text-decoration: none;
 }
 
 button:hover,
 a:hover {
-	cursor: pointer;
-	text-shadow: 0 0 15px white;
-	transform: scale(1.1);
+    cursor: pointer;
+    text-shadow: 0 0 15px white;
+    transform: scale(1.1);
 }
