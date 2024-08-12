@@ -96,7 +96,7 @@ export function Project(): JSX.Element {
                         <div>Typescript</div>
                     </div>
                 </Link>
-                <Link to={"/Portfolio"} className="box-5">
+                <Link to={"/EventFinder"}>
                     <div>
                         <video
                             src={PortfolioDemo}
@@ -107,7 +107,7 @@ export function Project(): JSX.Element {
                             height="100%"
                         ></video>
                     </div>
-                    <div className="center-text">Portfolio Website</div>
+                    <div className="center-text">Event Finder</div>
                 </Link>
                 <Link to={"/Portfolio"} className="box-5">
                     <div>
@@ -120,7 +120,7 @@ export function Project(): JSX.Element {
                             height="100%"
                         ></video>
                     </div>
-                    <div className="center-text">Portfolio Website</div>
+                    <div className="center-text">CIVAM</div>
                 </Link>
                 <Link to={"/Portfolio"} className="box-5">
                     <div>
@@ -133,20 +133,7 @@ export function Project(): JSX.Element {
                             height="100%"
                         ></video>
                     </div>
-                    <div className="center-text">Portfolio Website</div>
-                </Link>
-                <Link to={"/Portfolio"} className="box-5">
-                    <div>
-                        <video
-                            src={PortfolioDemo}
-                            autoPlay={true}
-                            muted
-                            loop
-                            width="100%"
-                            height="100%"
-                        ></video>
-                    </div>
-                    <div className="center-text">Portfolio Website</div>
+                    <div className="center-text">Bash The Dungeon</div>
                 </Link>
             </div>
         </div>
