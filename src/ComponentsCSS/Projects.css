@@ -1,72 +1,65 @@
-.projects-container { 
-	display: flex;
-	position: relative;
-	color: white;
-	z-index: 3;
-	height: 100%;
-	justify-content: center;
-	align-items: center;
+.projects-container {
+    display: flex; /* used to center the content */
+    position: relative;
+    color: white;
+    z-index: 3;
+    height: 130vh;
+    justify-content: center;
+    align-items: top;
 }
 
 .grid {
-	width: 80%;
-	height: 90%;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 4ch;
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4ch;
 }
 
 .grid > a {
-	position: relative;
-	background-color: rgb(0, 0, 0);
-	outline: 0.3ch solid rgba(255, 255, 255, 0.6);
-	border-radius: 1ch;
-	display: grid;
-	width: 100%;
-	height: 100%;
-	grid-template-rows: 2fr 1fr; /* determines the spacing between the display and title sub-boxes of the main box in the grid */
-	overflow: hidden;
-	transition: 0.6s;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    outline: 0.3ch solid rgba(255, 255, 255, 0.6);
+    border-radius: 1ch;
+    display: grid;
+    width: 100%;
+    height: 400px;
+    grid-template-rows: 2fr 1fr; /* determines the spacing between the display and title sub-boxes of the main box in the grid */
+    overflow: hidden;
+    transition: 0.6s;
+    grid-template-rows: 60% 10% 30%; /* 50% for image, 10% for title 40% for tags*/
 }
 
 .grid > a > div:nth-child(2n) {
-	background-color: #1d1f20;
+    background-color: #1d1f20;
 }
 
 .grid > a:before {
-	content: "";
-	background: rgba(255, 255, 255, 0.3);
-	width: 50%;
-	height: 100%;
-	left: -500px;
-	transform: skewX(-30deg);
-	position: absolute;
-	transition: 0.6s;
+    content: "";
+    background: rgba(255, 255, 255, 0.3);
+    width: 50%;
+    height: 100%;
+    left: -500px;
+    transform: skewX(-30deg);
+    position: absolute;
+    transition: 0.6s;
 }
 
 .grid > a:hover::before {
-	left: 330px;
-	width: 40%;
-	background: rgba(255, 255, 255, 0.3);
+    left: 330px;
+    width: 40%;
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .grid > a:hover {
-	transform: scale(1.1);
-	cursor: pointer;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
-.center-text{
-	display: flex;
-  align-items: center; /* Vertical centering */
-  justify-content: center; /* Horizontal centering */
-  font-weight: bolder;
-  font-size:17pt;
-}
-
-.box-4 {
-	/* without this the grid won't center the bottom two boxes*/
-	margin-left: 50%;
-}
-.box-5 {
-	margin-left: 50%;
+.center-text {
+    display: flex;
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    font-weight: bolder;
+    font-size: 17pt;
 }

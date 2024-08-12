@@ -69,7 +69,7 @@ export function Home(): JSX.Element {
                     </div>
                 </div>
             </section>
-            <section className="projects-screen">
+            <section>
                 <Project></Project>
             </section>
         </div>

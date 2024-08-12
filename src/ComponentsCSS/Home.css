@@ -1,7 +1,7 @@
 .title-background {
     width: inherit;
     display: flex;
-    height: 100vh;
+    height: 104vh;
     /*min-height: 610px;*/
     justify-content: center;
     align-items: center;
@@ -34,7 +34,6 @@
 .container {
     /*min-height: 1230px;*/
     width: inherit;
-    overflow-x: hidden;
 }
 
 .title-content {
