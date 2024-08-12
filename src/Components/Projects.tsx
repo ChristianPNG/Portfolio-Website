@@ -23,8 +23,13 @@ export function Project(): JSX.Element {
                         ></video>
                     </div>
                     <div className="center-text">Unix Shell</div>
-                    <div className="tag-list" style={{ fontSize: "9pt" }}>
-                        <div>Hello, yes, no</div>
+                    <div
+                        className="tag-list"
+                        style={{ fontSize: "9pt", justifyContent: "center" }}
+                    >
+                        <div>C</div>
+                        <div>Linux</div>
+                        <div>Bash</div>
                     </div>
                 </Link>
                 <Link to={"/BeatReal"}>
@@ -39,6 +44,15 @@ export function Project(): JSX.Element {
                         ></video>
                     </div>
                     <div className="center-text">BeatReal</div>
+                    <div
+                        className="tag-list"
+                        style={{ fontSize: "9pt", justifyContent: "center" }}
+                    >
+                        <div>Fullstack</div>
+                        <div>Angular</div>
+                        <div>MongoDB</div>
+                        <div>Team</div>
+                    </div>
                 </Link>
                 <Link to={"/Avalanche"}>
                     <div>
@@ -52,6 +66,14 @@ export function Project(): JSX.Element {
                         ></video>
                     </div>
                     <div className="center-text">Avalanche</div>
+                    <div
+                        className="tag-list"
+                        style={{ fontSize: "9pt", justifyContent: "center" }}
+                    >
+                        <div>HTML</div>
+                        <div>CSS</div>
+                        <div>Javascript</div>
+                    </div>
                 </Link>
                 <Link to={"/ClassScheduler"} className="box-4">
                     <div>
@@ -65,6 +87,53 @@ export function Project(): JSX.Element {
                         ></video>
                     </div>
                     <div className="center-text">UD Class Scheduler</div>
+                    <div
+                        className="tag-list"
+                        style={{ fontSize: "9pt", justifyContent: "center" }}
+                    >
+                        <div>Frontend</div>
+                        <div>JSON</div>
+                        <div>Typescript</div>
+                    </div>
+                </Link>
+                <Link to={"/Portfolio"} className="box-5">
+                    <div>
+                        <video
+                            src={PortfolioDemo}
+                            autoPlay={true}
+                            muted
+                            loop
+                            width="100%"
+                            height="100%"
+                        ></video>
+                    </div>
+                    <div className="center-text">Portfolio Website</div>
+                </Link>
+                <Link to={"/Portfolio"} className="box-5">
+                    <div>
+                        <video
+                            src={PortfolioDemo}
+                            autoPlay={true}
+                            muted
+                            loop
+                            width="100%"
+                            height="100%"
+                        ></video>
+                    </div>
+                    <div className="center-text">Portfolio Website</div>
+                </Link>
+                <Link to={"/Portfolio"} className="box-5">
+                    <div>
+                        <video
+                            src={PortfolioDemo}
+                            autoPlay={true}
+                            muted
+                            loop
+                            width="100%"
+                            height="100%"
+                        ></video>
+                    </div>
+                    <div className="center-text">Portfolio Website</div>
                 </Link>
                 <Link to={"/Portfolio"} className="box-5">
                     <div>
