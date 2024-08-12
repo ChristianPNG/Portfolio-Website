@@ -15,12 +15,11 @@ export function Home(): JSX.Element {
     }
     /*function toggleLight(): void{
 		setToggle(!toggle);
-	}*/
+	}
     {
-        /*useEffect(() =>{
+        useEffect(() =>{
 		document.body.classList.toggle('light-mode');
 	});*/
-    }
     return (
         <div className="container">
             <img src={backgroundimage} className="background-image" alt="" />
