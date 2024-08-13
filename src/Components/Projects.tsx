@@ -6,6 +6,9 @@ import AvalDemo from "../Resources/AvalResources/Avalanche_Demo.mp4";
 import BeatRealDemo from "../Resources/BeatRealResources/beatreal_demo.mp4";
 import SchedulerDemo from "../Resources/SchedulerResources/Scheduler_Demo.mp4";
 import PortfolioDemo from "../Resources/PortfolioResources/Portoflio_Demo.mp4";
+import EventFinderDemo from "../Resources/EventFinderResources/EventFinderVod.mp4";
+import CivamImage from "../Resources/CivamResources/1.png";
+import DungeonDemo from "../Resources/DungeonResources/BashTheDungeonVod.mp4";
 
 export function Project(): JSX.Element {
     return (
@@ -75,6 +78,70 @@ export function Project(): JSX.Element {
                         <div>Javascript</div>
                     </div>
                 </Link>
+                <Link to={"/Dungeon"}>
+                    <div>
+                        <video
+                            src={DungeonDemo}
+                            autoPlay={true}
+                            muted
+                            loop
+                            width="100%"
+                            height="100%"
+                        ></video>
+                    </div>
+                    <div className="center-text">Bash The Dungeon</div>
+                    <div
+                        className="tag-list"
+                        style={{ fontSize: "9pt", justifyContent: "center" }}
+                    >
+                        <div>Phaser</div>
+                        <div>Typescript</div>
+                        <div>Tile Mapping</div>
+                    </div>
+                </Link>
+                <Link to={"/EventFinder"}>
+                    <div>
+                        <video
+                            src={EventFinderDemo}
+                            autoPlay={true}
+                            muted
+                            loop
+                            width="100%"
+                            height="100%"
+                        ></video>
+                    </div>
+                    <div className="center-text">Event Finder</div>
+                    <div
+                        className="tag-list"
+                        style={{ fontSize: "9pt", justifyContent: "center" }}
+                    >
+                        <div>Fullstack</div>
+                        <div>Java</div>
+                        <div>SpringBoot</div>
+                        <div>SQLdeveloper</div>
+                        <div>React</div>
+                    </div>
+                </Link>
+                <Link to={"/CIVAM"}>
+                    <div>
+                        <img
+                            src={CivamImage}
+                            width="100%"
+                            height="100%"
+                            alt=""
+                        />
+                    </div>
+                    <div className="center-text">CIVAM</div>
+                    <div
+                        className="tag-list"
+                        style={{ fontSize: "9pt", justifyContent: "center" }}
+                    >
+                        <div>Client</div>
+                        <div>Debugging</div>
+                        <div>Angular</div>
+                        <div>Django</div>
+                    </div>
+                </Link>
                 <Link to={"/ClassScheduler"} className="box-4">
                     <div>
                         <video
@@ -93,47 +160,8 @@ export function Project(): JSX.Element {
                     >
                         <div>Frontend</div>
                         <div>JSON</div>
-                        <div>Typescript</div>
+                        <div>React</div>
                     </div>
-                </Link>
-                <Link to={"/EventFinder"}>
-                    <div>
-                        <video
-                            src={PortfolioDemo}
-                            autoPlay={true}
-                            muted
-                            loop
-                            width="100%"
-                            height="100%"
-                        ></video>
-                    </div>
-                    <div className="center-text">Event Finder</div>
-                </Link>
-                <Link to={"/Portfolio"} className="box-5">
-                    <div>
-                        <video
-                            src={PortfolioDemo}
-                            autoPlay={true}
-                            muted
-                            loop
-                            width="100%"
-                            height="100%"
-                        ></video>
-                    </div>
-                    <div className="center-text">CIVAM</div>
-                </Link>
-                <Link to={"/Portfolio"} className="box-5">
-                    <div>
-                        <video
-                            src={PortfolioDemo}
-                            autoPlay={true}
-                            muted
-                            loop
-                            width="100%"
-                            height="100%"
-                        ></video>
-                    </div>
-                    <div className="center-text">Bash The Dungeon</div>
                 </Link>
             </div>
         </div>
