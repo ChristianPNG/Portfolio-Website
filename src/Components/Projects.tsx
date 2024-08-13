@@ -4,11 +4,10 @@ import "../ComponentsCSS/Projects.css";
 import ShellDemo from "../Resources/Unix_Shell_Demo.mp4";
 import AvalDemo from "../Resources/AvalResources/Avalanche_Demo.mp4";
 import BeatRealDemo from "../Resources/BeatRealResources/beatreal_demo.mp4";
-import SchedulerDemo from "../Resources/SchedulerResources/Scheduler_Demo.mp4";
-import PortfolioDemo from "../Resources/PortfolioResources/Portoflio_Demo.mp4";
+import SchedulerDemo from "../Resources/SchedulerResources/5.png";
 import EventFinderDemo from "../Resources/EventFinderResources/EventFinderVod.mp4";
 import CivamImage from "../Resources/CivamResources/1.png";
-import DungeonDemo from "../Resources/DungeonResources/BashTheDungeonVod.mp4";
+import DungeonDemo from "../Resources/DungeonResources/1.png";
 
 export function Project(): JSX.Element {
     return (
@@ -80,14 +79,12 @@ export function Project(): JSX.Element {
                 </Link>
                 <Link to={"/Dungeon"}>
                     <div>
-                        <video
+                        <img
                             src={DungeonDemo}
-                            autoPlay={true}
-                            muted
-                            loop
                             width="100%"
                             height="100%"
-                        ></video>
+                            alt=""
+                        ></img>
                     </div>
                     <div className="center-text">Bash The Dungeon</div>
                     <div
@@ -97,6 +94,26 @@ export function Project(): JSX.Element {
                         <div>Phaser</div>
                         <div>Typescript</div>
                         <div>Tile Mapping</div>
+                    </div>
+                </Link>
+                <Link to={"/CIVAM"}>
+                    <div>
+                        <img
+                            src={CivamImage}
+                            width="100%"
+                            height="100%"
+                            alt=""
+                        />
+                    </div>
+                    <div className="center-text">CIVAM</div>
+                    <div
+                        className="tag-list"
+                        style={{ fontSize: "9pt", justifyContent: "center" }}
+                    >
+                        <div>Client</div>
+                        <div>Debugging</div>
+                        <div>Angular</div>
+                        <div>Django</div>
                     </div>
                 </Link>
                 <Link to={"/EventFinder"}>
@@ -122,36 +139,15 @@ export function Project(): JSX.Element {
                         <div>React</div>
                     </div>
                 </Link>
-                <Link to={"/CIVAM"}>
+
+                <Link to={"/ClassScheduler"} className="box-4">
                     <div>
                         <img
-                            src={CivamImage}
+                            src={SchedulerDemo}
                             width="100%"
                             height="100%"
                             alt=""
-                        />
-                    </div>
-                    <div className="center-text">CIVAM</div>
-                    <div
-                        className="tag-list"
-                        style={{ fontSize: "9pt", justifyContent: "center" }}
-                    >
-                        <div>Client</div>
-                        <div>Debugging</div>
-                        <div>Angular</div>
-                        <div>Django</div>
-                    </div>
-                </Link>
-                <Link to={"/ClassScheduler"} className="box-4">
-                    <div>
-                        <video
-                            src={SchedulerDemo}
-                            autoPlay={true}
-                            muted
-                            loop
-                            width="100%"
-                            height="100%"
-                        ></video>
+                        ></img>
                     </div>
                     <div className="center-text">UD Class Scheduler</div>
                     <div

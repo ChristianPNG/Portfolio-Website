@@ -7,8 +7,8 @@ import pic3 from "../Resources/DungeonResources/3.png";
 import pic4 from "../Resources/DungeonResources/4.png";
 
 export function BashTheDungeon(): JSX.Element {
-    let BeatRealImages: string[] = [pic1, pic2, pic3, pic4];
-    const BeatRealVideos: string[] = [demo];
+    let DungeonImages: string[] = [pic1, pic2, pic3, pic4];
+    const DungeonVideos: string[] = [demo];
     return (
         <div>
             <div className="background">
@@ -84,8 +84,8 @@ export function BashTheDungeon(): JSX.Element {
                 </div>
                 <div className="gallary">
                     <Gallary
-                        images={BeatRealImages}
-                        videos={BeatRealVideos}
+                        images={DungeonImages}
+                        videos={DungeonVideos}
                     ></Gallary>
                 </div>
             </div>
