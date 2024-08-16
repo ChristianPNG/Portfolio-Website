@@ -3,6 +3,7 @@
     display: flex;
     height: 104vh;
     /*min-height: 610px;*/
+    overflow: scroll;
     justify-content: center;
     align-items: center;
     color: white;
@@ -34,7 +35,6 @@
 .container {
     /*min-height: 1230px;*/
     width: inherit;
-
 }
 
 .title-content {
@@ -48,7 +48,7 @@
 }
 
 .text {
-    width: 40%;
+    width: 42%;
     height: 70%;
     font-size: 14pt;
     z-index: 3;
@@ -154,3 +154,7 @@ a:hover {
     text-shadow: 0 0 15px white;
     transform: scale(1.1);
 }
+
+/*.github-icon {
+    filter: invert(100%);
+}*/

@@ -3,6 +3,7 @@ import "../ComponentsCSS/Home.css";
 import "../App.css";
 import { Project } from "./Projects";
 import backgroundimage from "../Resources/background-image.png";
+import GithubIcon from "../Resources/PortfolioResources/github-desktop.svg";
 
 //import { Link } from "react-router-dom";
 
@@ -54,6 +55,20 @@ export function Home(): JSX.Element {
                             various projects, scroll down to view some of
                             them...
                         </p>
+                    </div>
+                    <div style={{ textAlign: "center", padding: "5px" }}>
+                        <a
+                            href="https://github.com/ChristianPNG"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <img
+                                src={GithubIcon}
+                                alt=""
+                                height={"35px"}
+                                className="github-icon"
+                            />
+                        </a>
                     </div>
                 </div>
                 {/*<figure className="sphere1"></figure>
