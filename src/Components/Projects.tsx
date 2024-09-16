@@ -132,10 +132,9 @@ export function Project(): JSX.Element {
                         className="tag-list"
                         style={{ fontSize: "9pt", justifyContent: "center" }}
                     >
-                        <div>Fullstack</div>
                         <div>Java</div>
                         <div>SpringBoot</div>
-                        <div>SQLdeveloper</div>
+                        <div>Oracle</div>
                         <div>React</div>
                     </div>
                 </Link>
