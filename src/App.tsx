@@ -11,12 +11,13 @@ import { About } from "./Components/About";
 import { BashTheDungeon } from "./Projects/BashTheDungeon";
 import { EventFinder } from "./Projects/EventFinder";
 import { CIVAM } from "./Projects/CIVAM";
+import { NotFoundPage } from "./Components/NotFoundPage";
 
 function App() {
-    const uri = window.location.pathname;
-    console.log(uri);
+    //const uri = window.location.pathname;
+    //console.log(uri);
     return (
-        <BrowserRouter basename={uri}>
+        <BrowserRouter basename="/Portfolio-Website">
             <Routes>
                 <Route path="/" element={<Home />}></Route>
                 <Route path="Shell" element={<ShellProject />}></Route>
@@ -31,6 +32,7 @@ function App() {
                 <Route path="EventFinder" element={<EventFinder />}></Route>
                 <Route path="Dungeon" element={<BashTheDungeon />}></Route>
                 <Route path="CIVAM" element={<CIVAM />}></Route>
+                <Route path="*" element={<NotFoundPage />} />
             </Routes>
         </BrowserRouter>
     );
