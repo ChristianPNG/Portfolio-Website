@@ -5,6 +5,8 @@ import pic1 from "../Resources/DungeonResources/1.png";
 import pic2 from "../Resources/DungeonResources/2.png";
 import pic3 from "../Resources/DungeonResources/3.png";
 import pic4 from "../Resources/DungeonResources/4.png";
+import { Link } from "react-router-dom";
+import { FaHouse } from "react-icons/fa6";
 
 export function BashTheDungeon(): JSX.Element {
     let DungeonImages: string[] = [pic1, pic2, pic3, pic4];
@@ -12,7 +14,16 @@ export function BashTheDungeon(): JSX.Element {
     return (
         <div>
             <div className="background">
-                <h1 className="title">Bash The Dungeon</h1>
+                <div className="title">
+                    <span className="home">
+                        <Link to={"/"}>
+                            <FaHouse />
+                        </Link>
+                    </span>
+                    <span style={{ marginRight: "24pt" }}>
+                        Bash The Dungeon
+                    </span>
+                </div>
                 <hr style={{ width: "87%" }}></hr>
                 <div className="description-grid-container">
                     <p>

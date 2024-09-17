@@ -16,11 +16,18 @@
 
 .title {
     text-align: center;
-    margin-top: auto;
-    padding-top: 1%;
+    font-size: 20pt;
+    margin-top: 0;
+    padding-top: 8pt;
     transform: scale(1.2);
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     color: #be8787;
+}
+
+.home {
+    color: white;
+    font-size: 16pt;
+    margin-right: 8pt;
 }
 
 p {

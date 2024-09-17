@@ -6,6 +6,8 @@ import pic2 from "../Resources/EventFinderResources/2.png";
 import pic3 from "../Resources/EventFinderResources/3.png";
 import pic4 from "../Resources/EventFinderResources/4.png";
 import pic5 from "../Resources/EventFinderResources/5.png";
+import { FaHouse } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export function EventFinder(): JSX.Element {
     let EventImages: string[] = [pic1, pic2, pic3, pic4, pic5];
@@ -13,7 +15,14 @@ export function EventFinder(): JSX.Element {
     return (
         <div>
             <div className="background">
-                <h1 className="title">EventFinder</h1>
+                <div className="title">
+                    <span className="home">
+                        <Link to={"/"}>
+                            <FaHouse />
+                        </Link>
+                    </span>
+                    <span style={{ marginRight: "24pt" }}>EventFinder</span>
+                </div>
                 <hr style={{ width: "87%" }}></hr>
                 <div className="description-grid-container">
                     <p>

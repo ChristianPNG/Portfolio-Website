@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import "./App.css";
 import { Home } from "./Components/Home";
 import { ShellProject } from "./Projects/ShellProject";
@@ -17,7 +17,7 @@ function App() {
     //const uri = window.location.pathname;
     //console.log(uri);
     return (
-        <BrowserRouter basename="/Portfolio-Website">
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<Home />}></Route>
                 <Route path="Shell" element={<ShellProject />}></Route>
@@ -34,7 +34,7 @@ function App() {
                 <Route path="CIVAM" element={<CIVAM />}></Route>
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 export default App;

@@ -1,3 +1,4 @@
+import { FaHouse } from "react-icons/fa6";
 import { Gallary } from "../Components/Gallary";
 import "../ComponentsCSS/Project-Description.css";
 import pic1 from "../Resources/CivamResources/1.png";
@@ -5,6 +6,7 @@ import pic2 from "../Resources/CivamResources/2.png";
 import pic3 from "../Resources/CivamResources/3.png";
 import pic4 from "../Resources/CivamResources/4.png";
 import pic5 from "../Resources/CivamResources/5.png";
+import { Link } from "react-router-dom";
 
 export function CIVAM(): JSX.Element {
     let CivamImages: string[] = [pic1, pic2, pic3, pic4, pic5];
@@ -12,7 +14,14 @@ export function CIVAM(): JSX.Element {
     return (
         <div>
             <div className="background">
-                <h1 className="title">CIVAM</h1>
+                <div className="title">
+                    <span className="home">
+                        <Link to={"/"}>
+                            <FaHouse />
+                        </Link>
+                    </span>
+                    <span style={{ marginRight: "24pt" }}>CIVAM</span>
+                </div>
                 <hr style={{ width: "87%" }}></hr>
                 <div className="description-grid-container">
                     <p>
