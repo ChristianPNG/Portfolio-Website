@@ -46,14 +46,13 @@ export function Home(): JSX.Element {
                         <p>👨‍💻</p>
                         <p>
                             I strive to learn everyday with a deep passion for
-                            exploring the world of programming, algorithms, and
-                            emerging technologies.
+                            exploring the world of emerging technologies.
                         </p>
                         <p>📚</p>
                         <p>
                             Throughout my academic journey, I've worked on
-                            various projects, scroll down to view some of
-                            them...
+                            various software projects, scroll down to view some
+                            of them...
                         </p>
                     </div>
                     <div style={{ textAlign: "center", padding: "5px" }}>
