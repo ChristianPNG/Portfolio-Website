@@ -35,7 +35,7 @@ export function Home(): JSX.Element {
                         <p>👋</p>
                         <p>
                             I am a graduate from the University of Delaware
-                            pursuing a career in software development
+                            pursuing a career in technology
                         </p>
                         <p>🎓</p>
                         <p>
